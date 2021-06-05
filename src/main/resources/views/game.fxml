@@ -1,0 +1,19 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.GridPane?>
+<VBox fx:controller="memory.controller.GameController"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:id="wrapper">
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem accelerator="Alt+L" onAction="#load" text="Load..."/>
+            <MenuItem accelerator="Alt+S" onAction="#save" text="Save..."/>
+            <MenuItem accelerator="Alt+X" onAction="#exit" text="Exit"/>
+        </Menu>
+    </MenuBar>
+    <GridPane prefHeight="780" alignment="CENTER" fx:id="grid" vgap="10" hgap="10">
+
+    </GridPane>
+</VBox>
